@@ -126,7 +126,7 @@ end
     @test rna"ACUGNACUGN"[5:1] == rna""
 
     @test aa"KSAAV"[3] == AA_A
-    @test char"いろはにほ"[3] == 'は'
+    @test_broken char"いろはにほ"[3] == 'は'
 end
 
 @testset "Equality" begin
